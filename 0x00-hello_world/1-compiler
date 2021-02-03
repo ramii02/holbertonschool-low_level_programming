@@ -1,2 +1,2 @@
 #!/bin/bash
-cc -c main.c main.o
+cc -c $CFILE.c -o obj/$CFILE.c
