@@ -1,28 +1,34 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 /**
 * * main - entry point
-* * print num to 99
+* * print combination 3 digit
 * * Return: success
 */
 int main(void)
 {
-int c, i;
-int d = '1';
+int c, i, j;
 
-for (c = '0'; c <= '9'; c++)
+for (c = '0'; c <= '7'; c++)
 {
-for (i = d; i <= '9'; i++)
+for (i = (c + 1); i <= '8'; i++)
+{
+for (j = (i + 1); j <= '9'; j++)
+{
+if ((c != i) && (c != j) && (i != j))
 {
 putchar(c);
 putchar(i);
-if ((c != '8') || (i != '9'))
+putchar(j);
+if ((c != '7') || (i != '8') || (j != '9'))
 {
 putchar(',');
 putchar(' ');
 }
 }
-d++;
+}
+}
 }
 putchar('\n');
 return (0);
