@@ -1,15 +1,16 @@
 #include "holberton.h"
-#include <stdio.h>
-/**
-* main - check the code for Holberton School students.
-* @c: checks for uppercase character
-* Return: Always 0.
-*/
-int _isupper(int c);
 
+/**
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
+int main(void)
 {
-if ('% d, c > 65 && % d, c > 90')
-return (1)
-else
-return (0)
+int i;
+
+i = 0;
+positive_or_negative(i);
+
+return (0);
 }
