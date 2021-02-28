@@ -9,13 +9,13 @@
 int main(int argc, char *argv[])
 {
 int i = 0;
-char *s = argv[argc - 1];
+char *str = argv[argc - 1];
 
-while (s[i] != '\0')
+while (str[i] != '\0')
 {
-_putchar(s[i]);
+_putchar (str[i]);
 i++;
 }
-_putchar('\n');
+_putchar ('\n');
 return (0);
 }
