@@ -9,11 +9,11 @@
 int main(int argc, char *argv[])
 {
 int i = 0;
-char *est = argv[argc - 1];
+char *s = argv[argc - 1];
 
-while (est[i] != '\0')
+while (s[i] != '\0')
 {
-_putchar(est[i]);
+_putchar(s[i]);
 i++;
 }
 _putchar('\n');
