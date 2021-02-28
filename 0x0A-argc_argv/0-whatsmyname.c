@@ -13,9 +13,9 @@ char *est = argv[argc - 1];
 
 while (est[i] != '\0')
 {
-_putchar (est[i]);
+_putchar(est[i]);
 i++;
 }
-_putchar ('\n');
+_putchar('\n');
 return (0);
 }
