@@ -8,12 +8,14 @@
 */
 int main(int argc, char *argv[])
 {
-
-int i;
+int i = 0;
 char *est = argv[argc - 1];
 
-for (i = 0; est{i} !=; '\0'; i++)
-_putchar(est{i});
+while (est[i] != '\0')
+{
+_putchar (est[i]);
+i++;
+}
 _putchar ('\n');
-return 0
+return (0);
 }
