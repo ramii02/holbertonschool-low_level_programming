@@ -1,51 +1,41 @@
-#include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-
+#include "holberton.h"
 /**
-* print_grid - prints a grid of integers
-* @grid: the address of the two dimensional grid
-* @width: width of the grid
-* @height: height of the grid
-* Return: Nothing.
-*/
-void print_grid(int **grid, int width, int height)
+* alloc_grid - creates a two dimensional array of int
+* @width: width of the matrix
+* @height: height of the matrix
+* Return: pointer to the created matrix (Success)
+* or NULL (Error)
+**/
+int **alloc_grid(int width, int height)
 {
-int w; 
-int h;
+int **arr;
+int i, j;
 
-h = 0;
-while (h < height)
+if (height <= 0 || width <= 0)
+return (NULL);
+
+arr = (int **) malloc(sizeof(int *) * height);
+
+if (arr == NULL)
+return (NULL);
+for (i = 0; i < height; i++)
 {
-w = 0;
-while (w < width)
-{
-printf("%d ", grid[h][w]);
-w++;
-}
-printf("\n");
-h++;
-}
+
+arr[i] = (int *) malloc(sizeof(int) * width);if 
+(arr[i] == NULL){
+free(arr);
+for (j = 0; j <= i; j++)
+free(arr[j]);
+return (NULL);
 }
 
-/**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
-*/
-int main(void)
+for (i = 0; i < height; i++)
 {
-int **grid;
-
-grid = alloc_grid(6, 4);
-if (grid == NULL)
-{
-return (1);
+for (j = 0; j < width; j++)
+{				
+arr[i][j] = 0;
 }
-print_grid(grid, 6, 4);
-printf("\n");
-grid[0][3] = 98;
-grid[3][4] = 402;
-print_grid(grid, 6, 4);
-return (0);
+}
+return (arr);
 }
