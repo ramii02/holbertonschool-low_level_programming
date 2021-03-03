@@ -1,41 +1,44 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
-*_strdup - duplicate string using malloc
-*@str: string to duplicate
-* Return: success
-**/
-
-char *_strdup(char *str)
+ *  * **alloc_grid - creates a two dimensional array of ints
+ *   * @width: width of the matrix
+ *    * @height: height of the matrix
+ *     *
+ *      * Return: pointer to the created matrix (Success)
+ *       * or NULL (Error)
+ *        */
+int **alloc_grid(int width, int height)
 {
-int i = 0;
-char *ptr;
-char *copyptr;
+		int **arr;
+			int i, j;
 
-if (str == NULL)
-return (NULL);
+				if (height <= 0 || width <= 0)
+							return (NULL);
 
-/* Allocate memory */
+					arr = (int **) malloc(sizeof(int *) * height);
 
-while (str[i] != '\0')
-i++;
+						if (arr == NULL)
+									return (NULL);
 
-ptr = malloc(sizeof(char) * i + 1);
-
-if (ptr == NULL)
-return (NULL);
-
-/* Copy string */
-
-copyptr = ptr;
-while (*str)
+							for (i = 0; i < height; i++)
+								{
+arr[i] = (int *) malloc(sizeof(int) * width		
+if (arr[i] == NULL)	
 {
-*copyptr = *str;
-copyptr++;
-str++;
+
+
+free(arr);														for (j = 0; j <= i; j++)												free(arr[j]);
+return (NULL);
 }
 
-*copyptr = '\0';
-return (ptr);
+for (i = 0; i < height; i++)
+{
+for (j = 0; j < width; j++)
+{
+arr[i][j] = 0;
+}
+}
+return (arr);
 }
