@@ -25,7 +25,7 @@ else
 return (NULL);
 }
 
-new = malloc(sizeof(listint_t));
+ule = malloc(sizeof(listint_t));
 if (!ule)
 return (NULL);
 
@@ -37,10 +37,6 @@ ule->next = *head;
 }
 else if (bos)
 {
-else if (bos)
 ule->next = bos->next;
 bos->next = ule;
-}
-
-return (ule)
 }
