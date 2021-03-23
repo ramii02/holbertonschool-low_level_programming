@@ -1,22 +1,21 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
-* print_listint -  Displays the values of each node and
+* print_listint - Print all the elements of a listint_t list
 * @h: The list
 * Return: The number of nodes
 */
 size_t print_listint(const listint_t *h)
 {
-size_t ule;
+size_t ule = 0;
 
-ule = 0;
-while (h != NULL)
+while (h)
 {
 printf("%d\n", h->n);
 h = h->next;
 ule++;
 }
+
 return (ule);
 }
