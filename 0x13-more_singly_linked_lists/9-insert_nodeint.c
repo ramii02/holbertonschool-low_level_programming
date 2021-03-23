@@ -33,7 +33,7 @@ ule->n = n;
 if (idx == 0)
 {
 ule->next = *head;
-*head =ule;
+*head = ule;
 }
 else if (bos)
 {
