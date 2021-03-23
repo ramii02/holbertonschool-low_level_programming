@@ -19,5 +19,5 @@ printf("%d\n", h->n);
 h = h->next;
 ule++;
 }
-return (count);
+return (ule);
 }
