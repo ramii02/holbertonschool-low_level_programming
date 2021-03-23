@@ -17,7 +17,7 @@ return (0);
 n = (*head)->n;
 
 ule = *head;
-*head = (*head)->next;	
+*head = (*head)->next;
 free(ule);
 
 return (n);
