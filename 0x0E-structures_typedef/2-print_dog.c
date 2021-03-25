@@ -3,7 +3,7 @@
 #include "dog.h"
 /**
 * print_dog - print dates of pets
-* @d: dog 
+* @d: dog
 * return: always 0.
 */
 void print_dog(struct dog *d)
