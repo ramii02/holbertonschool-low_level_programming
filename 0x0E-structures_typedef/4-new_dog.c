@@ -6,13 +6,13 @@
 * @s: string to evaluate
 * Return: the length of the string
 */
-int _strlen(char *s)
+int _strlen(char *ule)
 {
 int i;
 
 i = 0;
 
-while (s[i] != '\0')
+while (ule[i] != '\0')
 {
 i++;
 }
@@ -30,16 +30,16 @@ return (i);
 */
 char *_strcpy(char *dest, char *src)
 {
-int len, i;
+int mu, i;
 
-len = 0;
+mu = 0;
 
-while (src[len] != '\0')
+while (src[mu] != '\0')
 {
-len++;
+mu++;
 }
 
-for (i = 0; i < len; i++)
+for (i = 0; i < mu; i++)
 {
 dest[i] = src[i];
 }
@@ -57,32 +57,32 @@ return (dest);
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *dog;
-int len1, len2;
+dog_t *zapa;
+int mu1, mu2;
 
-len1 = _strlen(name);
-len2 = _strlen(owner);
+mu1 = _strlen(name);
+mu2 = _strlen(owner);
 
-dog = malloc(sizeof(dog_t));
-if (dog == NULL)
+zapa = malloc(sizeof(dog_t));
+if (zapa == NULL)
 return (NULL);
 
-dog->name = malloc(sizeof(char) * (len1 + 1));
-if (dog->name == NULL)
+zapa->name = malloc(sizeof(char) * (mu1 + 1));
+if (zapa->name == NULL)
 {
-free(dog);
+free(zapa);
 return (NULL);
 }
-dog->owner = malloc(sizeof(char) * (len2 + 1));
-if (dog->owner == NULL)
+zapa->owner = malloc(sizeof(char) * (mu2 + 1));
+if (zapa->owner == NULL)
 {
-free(dog);
-free(dog->name);
+free(zapa);
+free(zapa->name);
 return (NULL);
 }
-_strcpy(dog->name, name);
-_strcpy(dog->owner, owner);
-dog->age = age;
+_strcpy(zapa->name, name);
+_strcpy(zapa->owner, owner);
+zapa->age = age;
 
-return (dog);
+return (zapa);
 }
