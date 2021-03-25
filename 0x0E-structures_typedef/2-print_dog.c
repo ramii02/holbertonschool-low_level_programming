@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
-
 /**
-* print_dog - prints a struct dog
-* @d: struct dog to print
+* print_dog - check the code for holberton school students.
+* @d: dog 
+* return: always 0.
 */
 void print_dog(struct dog *d)
 {
