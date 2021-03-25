@@ -8,14 +8,14 @@
 */
 size_t print_list(const list_t *h)
 {
-size_t counter;
+size_t ule;
 
-counter = 0;
+ule = 0;
 while (h != NULL)
 {
 printf("[%u] %s\n", h->len, h->str);
 h = h->next;
-counter++;
+ule++;
 }
-return (counter);
+return (ule);
 }
