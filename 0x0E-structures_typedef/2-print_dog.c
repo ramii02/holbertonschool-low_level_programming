@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-* print_dog - check the code for holberton school students.
+* print_dog - print dates of pets
 * @d: dog 
 * return: always 0.
 */
