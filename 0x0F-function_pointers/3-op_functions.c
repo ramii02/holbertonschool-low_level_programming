@@ -9,10 +9,10 @@
 */
 int op_add(int a, int b)
 {
-int y;
+int ule;
 
-y = a + b;
-return (y);
+ule = a + b;
+return (ule);
 }
 /**
 * op_sub - subtract 2 numbers
@@ -22,10 +22,10 @@ return (y);
 */
 int op_sub(int a, int b)
 {
-int y;
+int ule;
 
-y = a - b;
-return (y);
+ule = a - b;
+return (ule);
 }
 /**
 * op_mul - multiply 2 nunmbers
@@ -35,10 +35,10 @@ return (y);
 */
 int op_mul(int a, int b)
 {
-int y;
+int mu;
 
-y = a * b;
-return (y);
+mu = a * b;
+return (mu);
 }
 /**
 * op_div - divide 2 numbers
@@ -48,10 +48,10 @@ return (y);
 */
 int op_div(int a, int b)
 {
-int y;
+int mu;
 
-y = a / b;
-return (y);
+mu = a / b;
+return (mu);
 }
 /**
 * op_mod - find remainder of 2 numbers
@@ -61,8 +61,8 @@ return (y);
 */
 int op_mod(int a, int b)
 {
-int y;
+int mu;
 
-y = a % b;
-return (y);
+mu = a % b;
+return (mu);
 }
