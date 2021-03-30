@@ -14,11 +14,11 @@ ssize_t est = 0;
 char *rami;
 
 if (!filename)
-return (0)
-rami = malloc(size(char) * letters);
+return (0);
+rami = malloc(sizeof(char) * letters);
 if (!rami)
 return (0);
-ule = open(filename, 0_RDONLY);
+ule = open(filename, O_RDONLY);
 if (ule == -1)
 {
 free(rami);
