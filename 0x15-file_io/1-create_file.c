@@ -20,8 +20,8 @@ return (-1);
 if (text_content)
 {
 while (text_content[est])
-s++;
-t = write(ule, text_content, est);
+est++;
+mu = write(ule, text_content, est);
 if (mu != est)
 return (-1);
 }
