@@ -1,11 +1,13 @@
 #include "holberton.h"
 
 /**
-* reset_to_98 - updates the value of the variable
-* the pointer points to to 98
-* @n: pointer to the variable to update
+* reset_to_98 - check the code for Holberton School students.
+* @n: wopa
+* Return: Always 0.
 */
+
 void reset_to_98(int *n)
+
 {
-*n= 98;
+*n = 98;
 }
