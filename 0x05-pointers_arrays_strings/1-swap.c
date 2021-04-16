@@ -1,15 +1,17 @@
 #include "holberton.h"
 
 /**
- * * swap_int - swaps the values of two integers
- * * @a: pointer to first value
- * * @b: pointer to second value
- * */
+* swap_int - check the code for Holberton School students.
+* @a: wopa
+* @b: wooopa
+* Return: Always 0.
+*/
+
 void swap_int(int *a, int *b)
 {
-		int t;
+int c;
 
-		t = *a;
-		*a = *b;
-		*b = t;
+c = *a;
+*a = *b;
+*b = c;
 }
