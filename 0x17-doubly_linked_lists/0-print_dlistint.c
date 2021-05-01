@@ -6,13 +6,13 @@
 */
 size_t print_dlistint(const dlistint_t *h)
 {
-int nodes = 0;
-
-while (nodes)
 {
-nodes++;
+int task = 0;
+
+for (task = 0; h != NULL; task++)
+{
 printf("%d\n", h->n);
 h = h->next;
 }
-return (nodes);
+return (task);
 }
