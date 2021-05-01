@@ -7,11 +7,11 @@
 */
 size_t dlistint_len(const dlistint_t *h)
 {
-int nodes = 0;
+int count = 0;
 
-for (nodes = 0; h != NULL; nodes++)
+for (count = 0; h != NULL; count++)
 {
 h = h->next;
 }
-return (nodes);
+return (count);
 }
