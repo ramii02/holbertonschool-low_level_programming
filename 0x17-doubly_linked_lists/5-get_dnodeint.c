@@ -2,7 +2,7 @@
 /**
 * get_dnodeint_at_index - Function that returns the nth node of a list.
 * @head: Head of the list.
-* @index: Place of the list.
+* @index: number of node of the list
 * Return: the index node
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
