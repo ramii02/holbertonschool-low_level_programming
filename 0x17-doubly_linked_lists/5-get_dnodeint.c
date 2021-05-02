@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
-* get_dnodeint_at_index - Function that returns the nth node of a list.
-* @head: Head of the list.
-* @index: number of node of the list
-* Return: the index node
+* get_dnodeint_at_index - return a node of double linked list
+* @head: head of the double list to print
+* @index: number
+* Return: the length of nodes
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
