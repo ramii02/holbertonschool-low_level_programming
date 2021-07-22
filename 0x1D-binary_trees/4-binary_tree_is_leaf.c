@@ -1,11 +1,10 @@
-#include <stdlib.h>
 #include "binary_trees.h"
-/**
- * binary_tree_is_leaf - checks if node is a leaf
- * @node: pointer to node to check
- * Return: 1 if node is leaf, otherwise 0
- */
 
+/**
+ * binary_tree_is_leaf - check if a node is a leaf
+ * @node: a binary tree node
+ * Return: 1 for True, 0 for False
+ */
 int binary_tree_is_leaf(const binary_tree_t *node)
 {
 	if (!node)

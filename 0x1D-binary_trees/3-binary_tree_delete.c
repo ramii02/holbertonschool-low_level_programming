@@ -1,11 +1,9 @@
-#include <stdlib.h>
 #include "binary_trees.h"
-/**
- * binary_tree_delete - deletes an entire binary tree
- * @tree: pointer to root node of the tree to delete
- * Return: void
- */
 
+/**
+ * binary_tree_delete - delete a binary tree
+ * @tree: pointer to binary tree
+ */
 void binary_tree_delete(binary_tree_t *tree)
 {
 	if (!tree)
